@@ -4,9 +4,7 @@ package ua.com.threedob.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-
 import org.springframework.web.bind.annotation.GetMapping;
-
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import ua.com.threedob.entity.User;
@@ -29,6 +27,11 @@ public class UserController {
         model.addAttribute("allUsersWithPurchase" , users);
  //       model.addAttribute("users",userService.findAll());
         return "allUsers";
+    }
+
+    @GetMapping(value = "toLoginPage")
+    private String toLoginPage(){
+        return "login";
     }
 //    @RequestMapping(value = "userspurchase",method = RequestMethod.POST)
 //    private String showAllUsersWithPurchase(Model model){

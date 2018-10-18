@@ -1,7 +1,55 @@
 body{
-    background: green;
+    padding: 0px;
+    margin: 0px
 }
-div{
-    width: 100px;
-    height: 100px;
+.dnone{
+    display: none
+}
+.dblock{
+    display: block;
+}
+.fleft{
+    float: left
+}
+.dinblock{
+    display: inline-block
+}
+.decnone{
+    text-decoration: none
+}
+.colorgreen{
+    color: green;
+}
+/*.upmenu{
+	width: 50;
+	margin: 20;
+	padding: 20;
+	border: 3;
+	color: red
+}*/
+
+.textalcen{
+    text-align: center
+}
+.upacl{
+    position: relative;
+
+    width: 190px;
+    margin: 0px;
+    padding: 10px 80px;
+    color: red;
+
+    background: green
+}
+width150{
+    width: 150px;
+}
+/*.backliblue{
+	background: lightblue
+}*/
+.up1{
+    height: 80px;
+    width: 90%;
+    /*padding: 40px*/
+
 }

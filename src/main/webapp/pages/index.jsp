@@ -7,9 +7,10 @@
 </head>
 <body>
 
-<h1>DSAFfghjfhg</h1>>
+<h1>Welcome to </h1>>
 <%--<h2>${findAllUsers}</h2>--%>
 <hr>
+
 <h1>All products:</h1>
 ${findAllProducts}
 <hr>
@@ -26,15 +27,19 @@ ${findAllProducts}
 
 <a href="/main">hivasia</a>
 
-<%--<hr>--%>
-<%--<form action="user" method="post" >--%>
-    <%--Spring form:--%>
-    <%--<br>--%>
-    <%--name    <input type = "text", name="userName" placeholder="Your Name"><br>--%>
-    <%--Surname <input type = "text", name="userSurName" placeholder="Your Surname"><br>--%>
-    <%--email   <input type = "text", name="email" placeholder="Your email"><br>--%>
-    <%--password<input type = "password", name="password" placeholder="Your password"><br>--%>
-    <%--Register!<input type="submit">--%>
-<%--</form>--%>
+<hr>
+<form action="user" method="post" >
+    Spring form:
+    <br>
+    name    <input type = "text", name="userName" placeholder="Your Name"><br>
+    Surname <input type = "text", name="userSurName" placeholder="Your Surname"><br>
+    email   <input type = "text", name="email" placeholder="Your email"><br>
+    password<input type = "password", name="password" placeholder="Your password"><br>
+    Register!<input type="submit">
+    <input type="hidden"
+           name="${_csrf.parameterName}"
+           value="${_csrf.token}"/>
+</form>
+<a href="toLoginPage">To Login Page</a>
 </body>
 </html>
